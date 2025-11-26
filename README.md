@@ -252,7 +252,7 @@ MLRequest.objects.create(
 	 project setting (e.g., `settings.MODEL_ARTIFACTS_PATH`) and resolve absolute
 	 paths at runtime.
 
-Next steps and suggestions
+Next steps
 --------------------------
 
 - Add unit tests for `PredictView`, `MLRegistry`, and `BatchPredictionViewSet`.
@@ -262,10 +262,6 @@ Next steps and suggestions
 - Move model artifact paths and other environment-specific settings to
 	`server/settings.py` and/or environment variables.
 
-If you want, I can open a PR that implements the straightforward fixes above
-(missing import, `fillna` assignment, JSON serialization before saving to DB,
-and ZeroDivision guards). Tell me which fixes you want applied and I'll patch
-the code.
 
 ---
 
